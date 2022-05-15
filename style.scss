@@ -1,0 +1,17 @@
+:root {
+    // colors
+    --clr-cyan: #CEE3E9;
+    --clr-dark-blue: #202733;
+    --clr-grey-blue: #4F5D74;
+    --clr-neon-green: #53FFAA;
+    --clr-dark-grey-blue: #313A48;
+
+    //fonts
+    --ff-200: 2.8rem;
+    --ff-100: 1.3rem;
+
+    @media (max-width: 35em) {
+        --ff-200: 2.4rem;
+        --ff-100: 1.1rem;
+    }
+}
