@@ -1,0 +1,119 @@
+:root {
+  --clr-cyan: #CEE3E9;
+  --clr-dark-blue: #202733;
+  --clr-grey-blue: #4F5D74;
+  --clr-neon-green: #53FFAA;
+  --clr-dark-grey-blue: #313A48;
+  --ff-200: 2.8rem;
+  --ff-100: 1.3rem;
+}
+
+@media (max-width: 35em) {
+  :root {
+    --ff-200: 2.4rem;
+    --ff-100: 1.1rem;
+  }
+}
+
+/*---------
+Reset
+---------*/
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-size: 62.5%;
+  height: 100vh;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  background-color: var(--clr-dark-blue);
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+}
+
+.card {
+  padding: 0 4.8rem;
+  max-width: 54rem;
+  border-radius: 1.5rem;
+  background-color: var(--clr-dark-grey-blue);
+  text-align: center;
+  position: relative;
+}
+
+@media (max-width: 35em) {
+  .card {
+    max-width: 34rem;
+  }
+}
+
+.advice__id {
+  font-size: var(--ff-100);
+  color: var(--clr-neon-green);
+  text-transform: uppercase;
+  letter-spacing: 4.09px;
+  padding: 4.8rem 1rem 2.4rem;
+}
+
+.advice__text {
+  font-size: var(--ff-200);
+  color: var(--clr-cyan);
+  letter-spacing: 0.3px;
+  padding-bottom: 4rem;
+}
+
+.divider {
+  padding-bottom: 6.5rem;
+}
+
+.dice-img {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.btn {
+  width: 6.4rem;
+  height: 6.4rem;
+  background-color: var(--clr-neon-green);
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: -3rem;
+  text-align: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.btn:hover {
+  -webkit-box-shadow: 0 0px 22px #53ffa978;
+          box-shadow: 0 0px 22px #53ffa978;
+}
+/*# sourceMappingURL=style.css.map */
