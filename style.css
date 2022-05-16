@@ -89,6 +89,19 @@ body {
   padding-bottom: 6.5rem;
 }
 
+.divider--mobile {
+  display: none;
+}
+
+@media (max-width: 35em) {
+  .divider--mobile {
+    display: block;
+  }
+  .divider--desktop {
+    display: none;
+  }
+}
+
 .dice-img {
   width: 2.4rem;
   height: 2.4rem;
